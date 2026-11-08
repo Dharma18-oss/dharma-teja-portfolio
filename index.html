@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05070A">
+<title>Dharma Teja Portfolio</title>
+<meta name="description" content="Portfolio of Dharma Teja, Data Center Engineer at Dell Technologies in Memphis on the path to Network Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+<!-- 06 · Header -->
+<header class="nav gut" id="nav">
+  <a class="logo" href="#top" aria-label="Back to top">DT<i></i></a>
+  <nav class="nav-links" id="navLinks" aria-label="Sections"></nav>
+  <a class="talk" id="talk" href="#contact"><span>Let’s Talk</span><b aria-hidden="true">↗</b></a>
+</header>
+
+<main>
+  <!-- 01 · HERO -->
+  <section class="hero" id="top">
+    <div class="atmo" aria-hidden="true"><div class="atmo-core"></div><div class="atmo-floor"></div><div class="atmo-vignette"></div></div>
+    <div class="hero-name" aria-hidden="true"><span id="heroName">DHARMA</span></div>
+    <div class="portrait" id="portrait">
+      <div class="portrait-stage">
+        <img id="portraitImg" alt="" hidden>
+        <div class="portrait-ph" id="portraitPh" aria-hidden="true">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMax meet"><defs>
+            <radialGradient id="rim" cx="70%" cy="30%" r="80%"><stop offset="0" stop-color="#7FB2FF" stop-opacity=".9"/><stop offset=".5" stop-color="#2F7DFF" stop-opacity=".35"/><stop offset="1" stop-color="#05070A" stop-opacity="0"/></radialGradient>
+            <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A2330"/><stop offset="1" stop-color="#07090D"/></linearGradient></defs>
+            <path d="M200 70c52 0 88 40 88 98 0 42-18 78-44 96v20c58 12 116 44 132 96l14 120H10l14-120c16-52 74-84 132-96v-20c-26-18-44-54-44-96 0-58 36-98 88-98z" fill="url(#body)"/>
+            <path d="M200 70c52 0 88 40 88 98 0 42-18 78-44 96v20c58 12 116 44 132 96l14 120H10l14-120c16-52 74-84 132-96v-20c-26-18-44-54-44-96 0-58 36-98 88-98z" fill="url(#rim)" opacity=".55"/>
+          </svg>
+          <span class="ph-note">Photo coming soon</span>
+        </div>
+        <div class="portrait-sweep" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="hero-side hero-left gut"><span class="side-tag" id="sideTag">MEM-DC</span></div>
+    <div class="hero-side hero-right gut">
+      <h1 class="sr">Dharma Teja, Data Center Engineer at Dell Technologies</h1>
+      <p class="role" id="heroRole">Data Center<br>Engineer</p>
+      <p class="meta" id="heroMeta">Dell · Linux · Network</p>
+    </div>
+
+    <div class="notif-wrap gut">
+      <div class="notif" id="notif" role="status">
+        <button class="notif-x" id="notifX" type="button" aria-label="Dismiss">✕</button>
+        <div class="notif-top"><span class="notif-app"><i class="led"></i><b id="nApp">iDRAC</b> · <span id="nName">Dharma Teja</span></span><span id="nTime">now</span></div>
+        <p class="notif-msg"><b id="nLead">Data center engineer</b> — <span id="nMsg">keeping production hardware healthy.</span></p>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#chapter-02" aria-label="Scroll to next chapter"><span></span></a>
+  </section>
+
+  <!-- 02 · WHERE HARDWARE MEETS THE NETWORK (pinned, scrubbed) + puzzle -->
+  <section class="ch2 pin" id="chapter-02" style="--pin:320vh">
+    <div class="sticky">
+      <div class="ch2-comp gut" id="ch2comp">
+        <div class="ch2-brand" id="ch2brand"></div>
+        <div class="ch2-sides">
+          <div class="ch2-side" id="ch2left"></div>
+          <div class="ch2-side right" id="ch2right"></div>
+        </div>
+                <h2 class="ch2-type" id="ch2type"></h2>
+        <div class="chips" id="chips" aria-hidden="true"></div>
+      </div>
+      <div class="puzzle" id="puzzle" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- 03 · ABOUT — three doors -->
+  <section class="about" id="about">
+    <div class="in gut">
+      <div class="eyebrow" id="aboutEyebrow"></div>
+      <h2 class="big" id="aboutTitle"></h2>
+      <div class="doors" id="doors"></div>
+    </div>
+    <div class="door-layer" id="doorLayer" hidden>
+      <div class="door-card" id="doorCard" role="dialog" aria-modal="true" aria-labelledby="dlTitle">
+        <button class="x" id="doorX" type="button" aria-label="Close">✕</button>
+        <div class="eyebrow" id="dlNo"></div>
+        <h3 id="dlTitle"></h3>
+        <p id="dlBody"></p>
+        <dl id="dlFacts"></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · THE FLOOR — 3D rack follows the cursor, idea panels fly past on scroll -->
+  <section class="floor pin" id="floor" style="--pin:300vh">
+    <div class="sticky">
+      <canvas id="floor3d" aria-label="3D server rack. It follows your cursor. Click the amber server to open the case."></canvas>
+      <div class="no3d-note">3D needs WebGL. The break/fix lab below works without it.</div>
+      <div class="floor-labels gut"><span id="flLeft"></span><span id="flRight"></span></div>
+      <div class="floor-copy gut">
+        <div class="eyebrow" id="flEyebrow"></div>
+        <h2 class="big" id="flTitle"></h2>
+        <p id="flDesc"></p>
+        <button class="alert" id="alertPill" type="button"><i class="led amber"></i><span id="alertTxt">1 alert · rack A07</span></button>
+      </div>
+      <div class="ideas" id="ideas" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- LAB — hands-on break/fix -->
+  <section class="lab" id="lab">
+    <div class="in gut">
+      <div class="eyebrow">( Lab · Break/Fix )</div>
+      <h2 class="big">Fix a server<br>the way I do.</h2>
+      <p class="lede">This is the server you saw in rack A07, pulled onto the bench. Find the amber LED, then work the case one real action at a time.</p>
+      <div class="lab-grid">
+        <div class="bench">
+          <div class="chassis-wrap" id="chassisWrap">
+            <div class="chassis" id="chassis" role="group" aria-label="Server front panel">
+              <div class="ctrl">
+                <div class="lcd" id="lcd" aria-live="polite">SYSTEM OK<br>SVC TAG DT-MEM-24</div>
+                <div class="ctrl-row"><i class="led" id="sysLed"></i>Health</div>
+                <div class="ctrl-row"><i class="led"></i>iDRAC link</div>
+              </div>
+              <div class="bays" id="bays"></div>
+              <div class="psus" id="psus"></div>
+            </div>
+          </div>
+          <div class="log" id="log" aria-live="polite" aria-label="Service log"></div>
+        </div>
+        <div class="poa glass">
+          <div class="eyebrow">Plan of Action</div>
+          <h3 id="poaTitle">Find the amber LED</h3>
+          <p id="poaText" class="dim">A component has failed. Click the part with the blinking amber light.</p>
+          <ol class="steps" id="steps"></ol>
+          <div class="btns">
+            <button class="btn" id="nextBtn" type="button" disabled>Locate the fault first</button>
+            <button class="btn ghost" id="newFault" type="button">Inject new fault</button>
+          </div>
+          <p class="hint" id="hint">Healthy parts glow blue. Amber means fault.</p>
+          <div class="stat"><span><b id="closed">0</b> cases closed</span><span><b id="sla">—</b> time to restore</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · THE METHOD (pinned, scrubbed): statement from the left, skills from the right -->
+  <section class="method pin" id="method" style="--pin:300vh">
+    <div class="sticky">
+      <div class="method-in gut">
+        <div class="statement">
+          <div class="eyebrow" id="mEyebrow"></div>
+          <h2 class="big" id="mStatement"></h2>
+          <p class="dim" id="mNote"></p>
+        </div>
+        <div class="skills">
+          <div class="eyebrow" id="skTitle"></div>
+          <div class="sk-track" id="skTrack"></div>
+          <div class="sk-dots" id="skDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="method-after">
+    <div class="in gut">
+      <div class="ma-grid">
+        <div><div class="eyebrow" id="mindTitle"></div><ul class="mind" id="mindLines"></ul></div>
+        <div><div class="eyebrow" id="exTitle"></div><ul class="explore" id="exItems"></ul></div>
+      </div>
+      <div class="ending" id="ending"></div>
+    </div>
+  </section>
+
+  <!-- 07 · ROADMAP -->
+  <section class="roadmap" id="roadmap">
+    <div class="in gut">
+      <div class="eyebrow" id="rmEyebrow"></div>
+      <h2 class="big" id="rmTitle"></h2>
+      <div class="rm-bar">
+        <div class="prog"><span class="bar"><span id="progFill"></span></span><span id="progTxt"></span></div>
+        <button class="btn" id="traceBtn" type="button">Run traceroute</button>
+      </div>
+      <div class="topo" id="topo"><canvas id="topo3d" aria-label="3D network topology of the roadmap. Click a node."></canvas><div class="no3d-note">3D needs WebGL. Use the milestone buttons below.</div></div>
+      <div class="hopbar" id="hopbar" aria-label="Milestones"></div>
+      <div class="learning" id="learning"></div>
+      <div class="hop-detail glass" aria-live="polite">
+        <div><div class="eyebrow" id="hdNum"></div><h3 id="hdName"></h3><span class="pill" id="hdStatus"></span></div>
+        <div><div class="eyebrow">Topics</div><div class="tags" id="hdTopics"></div><div class="eyebrow" style="margin-top:16px">How I’m practicing</div><p id="hdLab"></p></div>
+      </div>
+      <div class="drill glass">
+        <div>
+          <div class="eyebrow">Hop 03 in practice</div>
+          <h3>Subnetting drill</h3>
+          <p class="dim">The drill I run daily for CCNA prep. Work out the subnet for this address.</p>
+          <div class="q" id="dQ"></div>
+        </div>
+        <form id="drillForm" class="dform">
+          <label for="dNet">Network address</label><input id="dNet" autocomplete="off" spellcheck="false" placeholder="e.g. 10.0.4.0">
+          <label for="dBc">Broadcast address</label><input id="dBc" autocomplete="off" spellcheck="false" placeholder="e.g. 10.0.7.255">
+          <label for="dHosts">Usable hosts</label><input id="dHosts" inputmode="numeric" autocomplete="off" placeholder="e.g. 1022">
+          <div class="btns"><button class="btn" type="submit">Check</button><button class="btn ghost" type="button" id="dShow">Show answer</button><button class="btn ghost" type="button" id="dNew">New address</button></div>
+          <div class="dres" id="dRes" aria-live="polite"></div>
+          <div class="stat"><span><b id="dScore">0</b> correct</span><span><b id="dStreak">0</b> streak</span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="in gut">
+      <div class="eyebrow" id="ftEyebrow"></div>
+      <h2 class="mega" id="ftHead"></h2>
+      <p class="lede" id="ftLine"></p>
+      <div class="ft-social" id="ftSocial"></div>
+      <div class="ft-cols" id="ftCols"></div>
+      <div class="ft-base"><span id="ftName"></span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+</main>
+
+<!-- 04 · CASE FILES — hidden chapter, opened from "What I Do" -->
+<div class="works" id="works" hidden role="dialog" aria-modal="true" aria-label="Case files">
+  <div class="works-head gut">
+    <span class="works-brand" id="worksBrand"></span>
+    <span class="works-count" id="worksCount"></span>
+    <button class="works-x" id="worksX" type="button" aria-label="Close case files">✕</button>
+  </div>
+  <div class="works-scroll" id="worksScroll">
+    <div class="works-track" id="worksTrack">
+      <div class="works-stage" id="worksStage"><div class="works-world" id="worksWorld"></div></div>
+    </div>
+  </div>
+  <div class="works-hint gut">Scroll to move through the files · Esc to close</div>
+</div>
+<div class="flash" id="flash" aria-hidden="true"></div>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
