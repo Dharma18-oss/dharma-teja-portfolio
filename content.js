@@ -179,7 +179,7 @@ const SITE = {
   footer: {
     eyebrow: "( 08 · Contact )",
     headline: ["Let’s keep it", "running."],
-    line: "Open to data center operations, network support and junior network engineering roles.",
+    line: "",
     social: [{ label: "LinkedIn", href: "https://www.linkedin.com/in/dharma-teja-surabattula" }],
     columns: [
       { title: "Chapters", items: [["Hero", "#top"], ["Where Hardware Meets", "#chapter-02"], ["About", "#about"], ["Case Files", "#works"]] },
