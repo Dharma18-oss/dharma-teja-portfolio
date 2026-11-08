@@ -88,6 +88,13 @@
   }
   $("#notifX").addEventListener("click", () => $("#notif").classList.add("gone"));
   $("#notif").addEventListener("click", e => { if (e.target.id !== "notifX") document.getElementById("about").scrollIntoView({ behavior: REDUCE ? "auto" : "smooth" }); });
+  // mobile menu
+  const menuBtn = $("#menuBtn");
+  const setMenu = open => { document.body.classList.toggle("menu-open", open); menuBtn.setAttribute("aria-expanded", open); root.style.overflow = open ? "hidden" : ""; };
+  menuBtn.addEventListener("click", () => setMenu(!document.body.classList.contains("menu-open")));
+  $("#navLinks").addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+  addEventListener("keydown", e => { if (e.key === "Escape" && document.body.classList.contains("menu-open")) { setMenu(false); menuBtn.focus(); } });
+  matchMedia("(min-width: 961px)").addEventListener("change", e => { if (e.matches) setMenu(false); });
   // nav state
   const nav = $("#nav");
   const navSolid = () => nav.classList.toggle("solid", scrollY > 40);
@@ -325,7 +332,7 @@
   /* 06 · 3D (Three.js): the floor rack + the roadmap topology --- */
   function hasGL() { try { const c = document.createElement("canvas"); return !!(window.THREE && (c.getContext("webgl") || c.getContext("experimental-webgl"))); } catch (e) { return false; } }
   const ideaEls = $$("#ideas .idea");
-  if (!REDUCE) scene($("#floor"), p => ideaEls.forEach((d, i) => { const t = clamp((p - .08 - i * .26) / .5);
+  if (!REDUCE) scene($("#floor"), p => ideaEls.forEach((d, i) => { const t = clamp((p - .04 - i * .32) / .32);
     d.style.setProperty("--z", (lerp(-2200, 700, t)).toFixed(0) + "px"); d.style.setProperty("--o", (t < .15 ? t / .15 : t > .8 ? clamp(1 - (t - .8) / .2) : 1).toFixed(3)); }));
 
   if (hasGL()) build3D(); else root.classList.add("no3d");
